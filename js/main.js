@@ -1,6 +1,6 @@
 
 const eaLink = document.getElementsByClassName("ea-dead-space-link");
-let confirmMsg = "Do you want to open the EA wesite?";
+let confirmMsg = "Do you want to open the EA website?";
 const closeLoginTab = document.getElementById("close-login-tab");
 const closeHelpTab = document.getElementById("close-help-tab");
 
