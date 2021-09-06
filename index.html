@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Dead Space</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/550ddecd5b.js" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="js/main.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="tablist">
+      <ul class="nav nav-pills justify-content-end bg-dark" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-login-tab" data-bs-toggle="pill" data-bs-target="#pills-login" type="button" role="tab" aria-controls="pills-login" aria-selected="false">
+            <i class="far fa-user"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-help-tab" data-bs-toggle="pill" data-bs-target="#pills-help" type="button" role="tab" aria-controls="pills-help" aria-selected="false">
+            <i class="fas fa-question"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false">
+            <i class="fas fa-gamepad"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content bg-dark" id="pills-tabContent">
+        <div class="tab-pane" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+          <a href="#" class="close-button" id="close-login-tab" role="button"><i class="far fa-times-circle"></i></a>
+          <form class="login-form" action="index.html" method="post">
+            <div class="form-field">
+              <label class="login-label" for="username">Username:</label>
+              <input type="text" name="username" maxlength="20" required>
+            </div>
+            <div class="form-field">
+              <label class="login-label" for="password">Password:</label>
+              <input type="password" name="password" maxlength="20" required>
+            </div>
+            <div class="submit">
+              <input type="submit" class="login-submit" name="login" value="Login">
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane" id="pills-help" role="tabpanel" aria-labelledby="pills-help-tab">
+          <div class="help-content">
+            <a href="#" class="close-button" id="close-help-tab" role="button"><i class="far fa-times-circle"></i></a>
+            <p class="text-slot"><span class="help-text">This webpage is a replicate of the official website </span><a class="ea-dead-space-link" href="https://www.ea.com/games/dead-space" target="_blank">EA Dead Space</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- main header -->
+    <header>
+      <!-- navbar -->
+      <div class="navbar-wrap">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <div class="container-fluid">
+            <div class="view-more">
+              <button class="view-more-btn" type="button" name="view-more-btn">
+                <img src="images/flaticon/more.png" alt="View More Games"/>
+              </button>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <a href="#" class="navbar-brand"><i class="fas fa-gamepad"></i></a>
+              <ul class="navbar-nav me-auto mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle page-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    GAMES
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item sub-nav-link" href="#">Browse Games</a></li>
+                    <li><a class="dropdown-item sub-nav-link" href="#">Library</a></li>
+                    <li><a class="dropdown-item sub-nav-link" href="#">Free-to-play</a></li>
+                    <li><a class="dropdown-item sub-nav-link" href="#">Shop on Origin</a></li>
+                    <li><a class="dropdown-item sub-nav-link last" href="#">Subscription Updates</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle page-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ABOUT
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item sub-nav-link" href="#">About EA</a></li>
+                    <li><a class="dropdown-item sub-nav-link" href="#">News</a></li>
+                    <li><a class="dropdown-item sub-nav-link" href="#">Competative Gaming</a></li>
+                    <li><a class="dropdown-item sub-nav-link" href="#">Studios</a></li>
+                    <li><a class="dropdown-item sub-nav-link last" href="#">Careers</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle page-nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SUPPORT
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item sub-nav-link" href="#">Help</a></li>
+                    <li><a class="dropdown-item sub-nav-link last" href="#">Forums</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link page-nav-link" href="#">SUBSCRIBE TO EA</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <h1 id="main-header"><strong>DEAD SPACE GAMES</strong></h1>
+    </header>
+
+    <section class="main-content">
+      <p class="text-slot">
+        An ancient alien scourge has broken loose, transforming the dead into hideous Necromorphs, and only Engineer Isaac Clarke can stop them.
+        Fight for survival in this sci-fi horror adventure by using your engineering tools to disable the Necromorphs limb by twisted limb.
+        Join up with merciless soldier John Carver in Dead Space 3 and work together to discover the source of the Necromorph outbreak.
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="game-link col-lg-4 col-md-6 col-sm-12">
+            <div class="game-link-content">
+              <div class="red-cover">
+                <img class="ds-logos ds3-logo" src="images/dead-space-logo/ds3/dead-space-3-mono-logo_160x58.png" alt="Dead Space 3 Title">
+                <div class="ea-game-site">
+                  <a class="official-site-link" href="#">Official Site</a>
+                </div>
+                <div class="ea-support">
+                  <a class="support-link" href="#">Support</a>
+                </div>
+              </div>
+              <picture>
+                <source srcset="images/dead-space-poster/ds3/dead-space-3-keyart_350x350.jpg" media="(min-width: 767px)">
+                <img class="ds-img ds3-img" src="images/dead-space-poster/ds3/dead-space-3-keyart_635x635.jpg" alt="Dead Space 3">
+              </picture>
+            </div>
+          </div>
+          <div class="game-link col-lg-4 col-md-6 col-sm-12">
+            <div class="game-link-content">
+              <div class="red-cover">
+                <img class="ds-logos ds2-logo" src="images/dead-space-logo/ds2/dead-space-2-mono-logo_160x49.png" alt="Dead Space 2 Title">
+                <div class="ea-game-site">
+                  <a class="official-site-link" href="#">Official Site</a>
+                </div>
+                <div class="ea-support">
+                  <a class="support-link" href="#">Support</a>
+                </div>
+              </div>
+              <picture>
+                <source srcset="images/dead-space-poster/ds2/dead-space-2-mono-keyart_350x350.jpg" media="(min-width: 767px)">
+                <img class="ds-img ds2-img" src="images/dead-space-poster/ds2/dead-space-2-mono-keyart_635x635.jpg" alt="Dead Space 2">
+              </picture>
+            </div>
+          </div>
+          <div class="game-link col-lg-4 col-md-6 col-sm-12">
+            <div class="game-link-content">
+              <div class="red-cover">
+                <img class="ds-logos dsig-logo" src="images/dead-space-logo/dsig/dead-space-ignition-mono-logo_151x70.png" alt="Dead Space Ignition Title">
+                <div class="ea-game-site">
+                  <a class="official-site-link" href="#">Official Site</a>
+                </div>
+                <div class="ea-support">
+                  <a class="support-link" href="#">Support</a>
+                </div>
+              </div>
+              <picture>
+                <source srcset="images/dead-space-poster/dsig/dead-space-ignition-keyart_350x350.jpg" media="(min-width: 767px)">
+                <img class="ds-img dsig-img" src="images/dead-space-poster/dsig/dead-space-ignition-keyart_635x635.jpg" alt="Dead Space Ignition">
+              </picture>
+            </div>
+          </div>
+          <div class="game-link col-lg-4 col-md-6 col-sm-12">
+            <div class="game-link-content">
+              <div class="red-cover">
+                <img class="ds-logos dse-logo" src="images/dead-space-logo/dse/dead-space-extraction-mono-logo_160x51.png" alt="Dead Space Extraction Title">
+                <div class="ea-game-site">
+                  <a class="official-site-link" href="#">Official Site</a>
+                </div>
+                <div class="ea-support">
+                  <a class="support-link" href="#">Support</a>
+                </div>
+              </div>
+              <picture>
+                <source srcset="images/dead-space-poster/dsx/dead-space-extraction-keyart_350x350.jpg" media="(min-width: 767px)">
+                <img class="ds-img dse-img" src="images/dead-space-poster/dsx/dead-space-extraction-keyart_635x635.jpg" alt="Dead Space Extraction">
+              </picture>
+            </div>
+          </div>
+          <div class="game-link col-lg-4 col-md-6 col-sm-12">
+            <div class="game-link-content">
+              <div class="red-cover">
+                <img class="ds-logos ds1-logo" src="images/dead-space-logo/ds/dead-space-logo_160x44.png" alt="Dead Space Title">
+                <div class="ea-game-site">
+                  <a class="official-site-link" href="#">Official Site</a>
+                </div>
+                <div class="ea-support">
+                  <a class="support-link" href="#">Support</a>
+                </div>
+              </div>
+              <picture>
+                <source srcset="images/dead-space-poster/ds/dead-space-keyart_350x350.jpg" media="(min-width: 767px)">
+                <img class="ds-img ds1-img" src="images/dead-space-poster/ds/dead-space-keyart_635x635.jpg" alt="Dead Space">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">    <!-- row of 12 columns -->
+          <div class="footer-gamepad col-lg-1">    <!-- 1 column -->
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div class="networks col-lg-8">    <!-- 8 columns -->
+            <ul class="networks-list">
+              <li class="network-item">BROWSE GAMES</li>
+              <li class="network-item">ABOUT</li>
+              <li class="network-item">SUPPORT</li>
+              <li class="network-item">SHOP ON ORIGIN</li>
+              <li class="network-item">SUBSCRIPTION UPDATE</li>
+            </ul>
+            <br>
+            <ul class="legal-info">
+              <li class="legal-item">Legal</li>
+              <li class="legal-item">User Agreement</li>
+              <li class="legal-item">Privacy & Cookie Policy(Your Privacy Rights)</li>
+              <br>
+              <li class="legal-item">Online Service Updates</li>
+              <li class="legal-item">Security</li>
+              <br>
+              <li class="legal-item">&#169; 2021 Electronic Arts Inc.</li>
+            </ul>
+            <span class="flaticon-attribution">Icons made by <a class="flaticon-link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="flaticon-link" href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></span>
+          </div>
+
+          <div class="languages col-lg-3">    <!-- 3 columns -->
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-secondary dropdown-toggle lang-button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="lang-flags" id="selected-flag" src="images/flaticon/flags/flag.png" alt="USA"/><span id="lang">United States</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" id="usa" href="#"><img class="lang-flags" src="images/flaticon/flags/flag.png" alt="USA"/>United States</a></li>
+                <li><a class="dropdown-item" id="mexico" href="#"><img class="lang-flags" src="images/flaticon/flags/mexico.png" alt="Mexico"/>Mexico</a></li>
+                <li><a class="dropdown-item last" id="france" href="#"><img class="lang-flags" src="images/flaticon/flags/france.png" alt="France"/>France</a></a></li>
+              </ul>
+            </div>
+            <div class="privacy-shield-wrap">
+              <img class="privacy-shield" src="images/flaticon/reliable.png" alt="Privacy Shield" />
+            </div>
+          </div>
+        </div>  <!-- end row -->
+      </div>
+    </footer>
+  </body>
+</html>
